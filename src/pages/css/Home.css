@@ -1,0 +1,11 @@
+body {
+    --tw-bg-opacity: 1;
+    background: rgba(28,28,47,var(--tw-bg-opacity));
+    font-family: monospace;
+}
+#type {
+    --tw-text-opacity: 1;
+    color: rgba(156,163,175,var(--tw-text-opacity));
+    padding-left: 2cm;
+    padding-top: 1%;
+}
