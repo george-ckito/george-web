@@ -3,13 +3,17 @@ import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 import "./css/Home.css"
 import "react-icons/fa"
 import {IconContext} from "react-icons"
-import { LocationOutline } from 'react-ionicons';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaMapMarkerAlt, FaUserAlt } from 'react-icons/fa';
 
 function Home() {
     return (
         <>
-        <h1 id="type">george.is(
+        <h1 id="type">
+        <IconContext.Provider value={{ style: {fontSize: '30px', color: "white"}}}>
+       
+       <FaUserAlt/>
+       
+    </IconContext.Provider>  george.isA(
             <span style={{color: 'rgb(86, 28, 153)', fontWeight: 'bold'}}>
             ' <Typewriter 
                 loop
@@ -25,17 +29,43 @@ function Home() {
             </span>
             
         </h1>
-        <a href='https://www.github.com'><IconContext.Provider value={{ style: {fontSize: '30px', color: "white"}}}>
-       <div>
+        <img src='https://i.ibb.co/Tc4zfYH/file.png' style={{float: 'right', paddingRight: '190px', borderRadius: 35}}></img>
+        <br></br><br></br><br></br>
+        <div id='icons'>
+            <h1>
+        <IconContext.Provider value={{ style: {fontSize: '30px', color: "white"}}}>
+
+       <FaMapMarkerAlt/>
+
+    </IconContext.Provider>  george.livesIn(<span style={{color: 'rgb(86, 28, 153)', fontWeight: 'bold'}}>'georgia'</span>)</h1>
+    <br></br><br></br><br></br>
+    <h1>
+        <a href='https://www.github.com/raining-codes'><IconContext.Provider value={{ style: {fontSize: '30px', color: "white"}}}>
        <FaGithub/>
-       </div>
     </IconContext.Provider>
-    </a>
-    <IconContext.Provider value={{ style: {fontSize: '30px', color: "gray"}}}>
-       
-       <LocationOutline/>
-       
-    </IconContext.Provider>
+    </a> george.github(<span style={{color: 'rgb(86, 28, 153)', fontWeight: 'bold'}}>'raining-codes'</span>)
+    </h1>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+<center><h1>Github Projects</h1></center>
+<br></br>
+<br></br>
+<center><div className='github'>
+    <span  className='title'>
+        lmao 
+    </span>
+    </div></center>
+  
        
         </>
     );
